@@ -1,9 +1,9 @@
 package com.example.lab04
 
-
 import android.content.Context
 import android.graphics.Color
 import android.util.AttributeSet
+import android.util.Log
 import androidx.appcompat.widget.AppCompatButton
 
 class NewComponent @JvmOverloads constructor(
@@ -22,6 +22,8 @@ class NewComponent @JvmOverloads constructor(
         setOnClickListener {
             setBackgroundColor(Color.GREEN)
             text = "¡Presionado!"
+            // Agregar log para depuración
+            Log.d("NewComponent", "Botón presionado, el color cambió a verde.")
         }
     }
 }
